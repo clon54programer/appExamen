@@ -35,30 +35,39 @@ if (Username == "Valde" && password == "12345Clon54")
         Console.WriteLine("Son 9 preguntas que debes reponder");
         Console.WriteLine(exercise1);
         Console.WriteLine($"{option1[0]}  {option1[1]} {option1[2]} {option1[3]}");
+        Console.WriteLine("respusta:");
         string response1 = Console.ReadLine();
         Console.WriteLine(exercise2);
         Console.WriteLine($"{option2[0]}  {option2[1]} {option2[2]} {option2[3]}");
+        Console.WriteLine("respusta:");
         string response2 = Console.ReadLine();
         Console.WriteLine(exercise3);
         Console.WriteLine($"{option3[0]}  {option3[1]} {option3[2]} {option3[3]}");
+        Console.WriteLine("respusta:");
         string response3 = Console.ReadLine();
         Console.WriteLine(exercise4);
         Console.WriteLine($"{option4[0]}  {option4[1]} {option4[2]}");
+        Console.WriteLine("respusta:");
         string response4 = Console.ReadLine();
         Console.WriteLine(exercise5);
         Console.WriteLine($"{option5[0]}  {option5[1]} {option5[2]} {option5[3]}");
+        Console.WriteLine("respusta:");
         string response5 = Console.ReadLine();
         Console.WriteLine(exercise6+" coloca un nuemro");
         Console.WriteLine($"{option6[0]}  {option6[1]} {option6[2]} {option6[3]} {option6[4]} {option6[5]} {option6[6]} {option6[7]} {option6[8]} {option6[9]}");
+        Console.WriteLine("respusta:");
         string response6 = Console.ReadLine();
         Console.WriteLine(exercise7);
         Console.WriteLine($"{option7[0]}  {option7[1]} {option7[2]}");
+        Console.WriteLine("respusta:");
         string response7 = Console.ReadLine();
         Console.WriteLine(exercise8);
         Console.WriteLine($"{option8[0]}  {option8[1]} {option8[2]}");
+        Console.WriteLine("respusta:");
         string response8 = Console.ReadLine();
         Console.WriteLine(exercise9);
         Console.WriteLine($"{option9[0]}  {option9[1]} {option9[2]}");
+        Console.WriteLine("respusta:");
         string response9 = Console.ReadLine();
         //logica del programa
         if(response1 == "d" | response1 == "D")
@@ -120,16 +129,24 @@ if (Username == "Valde" && password == "12345Clon54")
          if(response9 == "a" | response9 == "A")
         {
             Console.WriteLine("correcto");
-            Environment.Exit(0);
         }
         else
         {
             Console.WriteLine("correcto");
+            
+        }
+
+        if (response1 == "d" | response1 == "D" && response2 == "b" | response2 == "B" && response3 == "c" | response3 == "C" && response4 == "c" | response4 == "C" && response5 == "a" | response5 == "A" && response6 == "10" | response6 == "10" && response7 == "b" | response7 == "B" && response8 == "a" | response8 == "A" && response9 == "a" | response9 == "A")
+        {
+            Console.WriteLine("felicidades tuviste 9/9");
             Environment.Exit(0);
         }
-          
-                                        
-        
+        else
+        {
+            Console.WriteLine($"tuviste una opcion mala por favor repita el examen\n");
+        }
+       
+      
     }
 }
 else
